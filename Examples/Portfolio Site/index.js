@@ -4,7 +4,7 @@ const cfg = require('./config.json')
 //initialize express app
 const app = express();
 app.use(express.static('public'));
-app.use('/assets', express.static(__dirname + 'public/assets'))
+app.use('/assets', express.static(__dirname + 'src/public/assets'))
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 // run the routing file
