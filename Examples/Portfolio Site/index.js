@@ -1,10 +1,11 @@
 const express = require('express');
+var path = require('path');
 // Import Config
 const cfg = require('./config.json')
 //initialize express app
 const app = express();
 app.use(express.static('public'));
-app.use('/assets', express.static(__dirname + 'src/public/assets'))
+app.use('/assets', express.static(path.join(__dirname, 'src/public/assets')))
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 // run the routing file
