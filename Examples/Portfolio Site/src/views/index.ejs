@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/main.css" />
+    <title>Shawn's Portfolio</title>
+</head>
+
+<script>
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+    window.addEventListener("scroll", reveal);
+
+    // To check the scroll position on page load
+    reveal();
+</script>
+
+<body>
+    <div class="container">
+        <section id="top">
+            <h1>Shawn Engmann</h1>
+            <br>
+            <p id="text01" class="reveal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa possimus eius
+                numquam
+                voluptas suscipit cumque velit! Suscipit, eveniet. Repellat, quo assumenda blanditiis magni ad explicabo
+                harum
+                commodi quaerat sed provident.</p>
+            <br>
+            <div class="button-row">
+                <a href="#" class="reveal">Call To Action</a>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="reveal" id="features">
+            <h1 class="text-left">About Me</h1>
+            <hr class="border border-1 opacity-100 split001 w-10">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione vitae sed est cum veniam vel
+                repudiandae amet facere sunt rerum odit molestiae omnis porro accusamus debitis similique dolor optio
+                fugit reiciendis officia, tenetur velit. Libero quo nostrum et atque expedita! Laudantium facere soluta
+                culpa perferendis cumque, vero dicta tempore eveniet, delectus animi provident quo rem deserunt quasi
+                officiis iste totam. Omnis, dicta nemo expedita odit quas natus, quo dolorum enim possimus ab quae, modi
+                accusantium? Repudiandae beatae odio doloribus in soluta delectus, quod sunt voluptas. Corporis animi
+                nobis repellendus voluptas, deleniti perferendis praesentium sequi vitae molestias, commodi est natus
+                nostrum nulla. Amet, placeat vel nihil aspernatur enim laboriosam accusantium culpa eligendi veritatis
+                reprehenderit voluptatibus nobis totam possimus, atque, soluta ullam nulla aut et quae? Explicabo optio
+                sit cupiditate dignissimos illum laboriosam, placeat adipisci vitae? Culpa nobis autem sequi animi sunt
+                voluptas nam accusantium delectus, facilis voluptatem quae, nesciunt possimus aspernatur, repellendus
+                ipsam expedita ab saepe deserunt nisi vitae laudantium atque ex? Accusamus eveniet quas praesentium
+                dicta temporibus officiis deserunt aliquid, excepturi molestias rerum voluptatibus numquam nesciunt
+                tenetur maiores voluptate illo eligendi, nostrum dignissimos reiciendis est! Illo veritatis doloremque,
+                velit aliquam excepturi quibusdam molestiae quas earum facere odio quis facilis.</p>
+            <br> <br>
+            <h1 class="text-left">Projects</h1>
+            <hr class="border border-1 opacity-100 split001 w-10">
+            <ul class="">
+                <li class="">Project 1</li>
+                <li class="">Project 2</li>
+                <li class="">Project 3</li>
+            </ul>
+            <br> <br>
+            <h1 class="text-left">Skills</h1>
+            <hr class="border border-1 opacity-100 split001 w-10">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione vitae sed est cum veniam vel
+                repudiandae amet facere sunt rerum odit molestiae omnis porro accusamus debitis similique dolor optio
+                fugit reiciendis officia, tenetur velit. Libero quo nostrum et atque expedita! Laudantium facere soluta
+                culpa perferendis cumque, vero dicta tempore eveniet, delectus animi provident quo rem deserunt quasi
+                officiis iste totam. Omnis, dicta nemo expedita odit quas natus, quo dolorum enim possimus ab quae, modi
+                accusantium? Repudiandae beatae odio doloribus in soluta delectus, quod sunt voluptas. Corporis animi
+                nobis repellendus voluptas, deleniti perferendis praesentium sequi vitae molestias, commodi est natus
+                nostrum nulla. Amet, placeat vel nihil aspernatur enim laboriosam accusantium culpa eligendi veritatis
+                reprehenderit voluptatibus nobis totam possimus, atque, soluta ullam nulla aut et quae? Explicabo optio
+                sit cupiditate dignissimos illum laboriosam, placeat adipisci vitae? Culpa nobis autem sequi animi sunt
+                voluptas nam accusantium delectus, facilis voluptatem quae, nesciunt possimus aspernatur, repellendus
+                ipsam expedita ab saepe deserunt nisi vitae laudantium atque ex? Accusamus eveniet quas praesentium
+                dicta temporibus officiis deserunt aliquid, excepturi molestias rerum voluptatibus numquam nesciunt
+                tenetur maiores voluptate illo eligendi, nostrum dignissimos reiciendis est! Illo veritatis doloremque,
+                velit aliquam excepturi quibusdam molestiae quas earum facere odio quis facilis.</p>
+            <br>
+            <h4>My Stack</h4>
+            <ul class="">
+                <li class="">HTML</li>
+                <li class="">CSS</li>
+                <li class="">JS</li>
+            </ul>
+            <div class="progress mb-4">
+                <div class="progress-bar w-40" role="progressbar" aria-label="Basic example" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">HTML</div>
+            </div>
+            <div class="progress mb-4">
+                <div class="progress-bar w-50" role="progressbar" aria-label="Basic example" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100">CSS</div>
+            </div>
+            <div class="progress mb-4">
+                <div class="progress-bar w-100" role="progressbar" aria-label="Basic example" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="100">JS</div>
+            </div>
+        </div>
+
+</body>
+
+</html>
